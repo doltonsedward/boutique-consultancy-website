@@ -1,0 +1,77 @@
+const products = [
+  {
+    id: 1,
+    name: "Elegant Cream Dress",
+    price: 299,
+    category: "Dresses",
+    image: "/assets/Elegant-Cream-Dress.png",
+    featured: true,
+  },
+  {
+    id: 2,
+    name: "Classic Tan Blazer",
+    price: 459,
+    category: "Blazers",
+    image: "/assets/Classic-Tan-Blazer.png",
+    featured: true,
+  },
+  {
+    id: 3,
+    name: "Camel Wool Coat",
+    price: 699,
+    category: "Outerwear",
+    image: "/assets/Camel-Wool-Coat.png",
+    featured: true,
+  },
+  {
+    id: 4,
+    name: "Silk Blouse",
+    price: 189,
+    category: "Tops",
+    image: "/assets/Silk-Blouse.png",
+  },
+  {
+    id: 5,
+    name: "Tailored Trousers",
+    price: 259,
+    category: "Bottoms",
+    image: "/assets/Tailored-Trousers.png",
+  },
+  {
+    id: 6,
+    name: "Cashmere Sweater",
+    price: 349,
+    category: "Knitwear",
+    image: "/assets/Cashmere-Sweater.png",
+  },
+  {
+    id: 7,
+    name: "Leather Handbag",
+    price: 599,
+    category: "Accessories",
+    image: "/assets/Leather-Handbag.png",
+  },
+  {
+    id: 8,
+    name: "Pearl Necklace",
+    price: 199,
+    category: "Jewelry",
+    image: "/assets/Pearl-Necklace.png",
+  },
+  {
+    id: 9,
+    name: "Midi Skirt",
+    price: 179,
+    category: "Bottoms",
+    image: "/assets/Camel-Wool-Coat.png",
+  },
+  {
+    id: 10,
+    name: "Wool Cardigan",
+    price: 289,
+    category: "Knitwear",
+    image: "/assets/Cashmere-Sweater.png",
+  },
+];
+
+export default products;
