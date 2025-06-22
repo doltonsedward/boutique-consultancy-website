@@ -1,8 +1,8 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import Navigation from "@/components/navigation"
-import Footer from "@/components/footer"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import Navigation from "@/components/navigation";
+import Footer from "@/components/footer";
 
 // Mock data for products
 const featuredProducts = [
@@ -10,21 +10,21 @@ const featuredProducts = [
     id: 1,
     name: "Elegant Cream Dress",
     price: 299,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/assets/Elegant-Cream-Dress.png",
   },
   {
     id: 2,
     name: "Classic Tan Blazer",
     price: 459,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/assets/Classic-Tan-Blazer.png",
   },
   {
     id: 3,
     name: "Camel Wool Coat",
     price: 699,
-    image: "/placeholder.svg?height=400&width=300",
+    image: "/assets/Camel-Wool-Coat.png",
   },
-]
+];
 
 export default function HomePage() {
   return (
@@ -48,7 +48,11 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button asChild size="lg" className="bg-stone-800 hover:bg-stone-900 text-white px-8 py-3">
+              <Button
+                asChild
+                size="lg"
+                className="bg-stone-800 hover:bg-stone-900 text-white px-8 py-3"
+              >
                 <Link href="/booking">Book Consultation</Link>
               </Button>
               <Button
@@ -78,9 +82,12 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl lg:text-5xl font-light text-stone-900 mb-4">COLLECTION</h2>
+            <h2 className="font-playfair text-4xl lg:text-5xl font-light text-stone-900 mb-4">
+              COLLECTION
+            </h2>
             <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-              Discover our curated selection of timeless pieces designed to elevate your wardrobe
+              Discover our curated selection of timeless pieces designed to
+              elevate your wardrobe
             </p>
           </div>
 
@@ -96,7 +103,9 @@ export default function HomePage() {
                     className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
-                <h3 className="font-playfair text-xl text-stone-900 mb-2">{product.name}</h3>
+                <h3 className="font-playfair text-xl text-stone-900 mb-2">
+                  {product.name}
+                </h3>
                 <p className="text-stone-600 font-medium">${product.price}</p>
               </div>
             ))}
@@ -118,11 +127,18 @@ export default function HomePage() {
       {/* Consultation CTA */}
       <section className="py-20 bg-stone-100">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-light text-stone-900 mb-6">BOOK A CONSULTATION</h2>
+          <h2 className="font-playfair text-4xl lg:text-5xl font-light text-stone-900 mb-6">
+            BOOK A CONSULTATION
+          </h2>
           <p className="text-xl text-stone-700 mb-8 max-w-2xl mx-auto">
-            Schedule a 1-hour personal consultation with our expert stylists to transform your wardrobe.
+            Schedule a 1-hour personal consultation with our expert stylists to
+            transform your wardrobe.
           </p>
-          <Button asChild size="lg" className="bg-stone-800 hover:bg-stone-900 text-white px-12 py-4 text-lg">
+          <Button
+            asChild
+            size="lg"
+            className="bg-stone-800 hover:bg-stone-900 text-white px-12 py-4 text-lg"
+          >
             <Link href="/booking">BOOK NOW</Link>
           </Button>
         </div>
@@ -130,5 +146,5 @@ export default function HomePage() {
 
       <Footer />
     </div>
-  )
+  );
 }
